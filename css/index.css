@@ -3,8 +3,6 @@ body {
     font-size: 12px;
 }
 
-
-
 .header {
     background-color: rgb(31, 30, 30);
     padding: 20px 0;
@@ -43,14 +41,17 @@ body {
     font-weight: 700;
     border-radius: 100px;
 }
+
 .main .container {
     background-color: rgb(31, 30, 30);
 }
+
 .main section {
     width: 100%;
     max-width: 1680px;
     margin: 0 auto;
 }
+
 .principal {
     display: flex;
     justify-content: space-between;
