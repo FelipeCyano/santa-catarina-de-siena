@@ -5,7 +5,7 @@ body {
 
 .header {
     background-color: rgb(31, 30, 30);
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .header-container {
@@ -42,21 +42,58 @@ body {
     border-radius: 100px;
 }
 
-.main .container {
+main .container {
     background-color: rgb(31, 30, 30);
 }
 
-.main section {
+main section {
     width: 100%;
     max-width: 1680px;
     margin: 0 auto;
 }
 
-.principal {
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 500px;
+    position: relative;
+    margin-bottom: 120px;
 }
+
+.banner-block {
+    color: #fff;
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 2.4em;
+}
+
+.banner-subtitle {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.banner-link {
+    background-color: #fff;
+    color: rgb(31, 30, 30);
+    display: inline-block;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+.banner-image {
+    display: inline-block;
+    width: 700px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
 
 /* seletor: pode ser uma tag html, uma classe (.), um id (#), um atributo [] */
 
