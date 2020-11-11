@@ -36,13 +36,14 @@ body {
 }
 
 .header-nav__menu-item {
-    margin: 0px 20px;
-    padding: 30px 10px;
+    padding: 30px 20px;
+    margin: 0px 30px;
 }
 
 .header-nav__menu-item:hover {
     color: #000;
     background-color: #fff;
+    font-weight: 700;
 }
 
 .header-link {
@@ -127,16 +128,16 @@ main .container {
   }
    
 .linha-do-tempo ul::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-      border-radius: 10px;
-      background-color: #fff;
-  }
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: #fff;
+}
    
 .linha-do-tempo ul::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-      background-color: #b42310;
-  }
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: #b42310;
+}
 
 .linha-do-tempo ul li {
     padding: 0 20px;
