@@ -17,7 +17,7 @@ body {
 }
 
 .header-title {
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-size: 1.2em;
     padding: 30px 20px;
@@ -44,11 +44,12 @@ body {
     color: #000;
     background-color: #fff;
     font-weight: 700;
+    padding: 30px 19px;
 }
 
 .header-link {
-    background-color: #fff;
     color: rgb(31, 30, 30);
+    background-color: #fff;
     text-decoration: none;
     font-weight: 700;
     border-radius: 100px;
@@ -70,8 +71,8 @@ main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
     position: relative;
+    height: 500px;
     margin-bottom: 120px;
 }
 
@@ -81,22 +82,23 @@ main .container {
 }
 
 .banner-title {
-    font-size: 2.4em;
+    font-size: 4em;
 }
 
 .banner-subtitle {
+    font-size: 1.2em;
     font-weight: 300;
     margin: 10px 0;
 }
 
 .banner-link {
-    background-color: #fff;
-    color: rgb(31, 30, 30);
     display: inline-block;
-    padding: 15px;
-    margin: 10px 0;
+    color: rgb(31, 30, 30);
+    background-color: #fff;
     text-decoration: none;
     font-weight: 700;
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 100px;
 }
 
@@ -125,6 +127,7 @@ main .container {
 
 .linha-do-tempo ul::-webkit-scrollbar {
     width: 5px;
+    display: none;
   }
    
 .linha-do-tempo ul::-webkit-scrollbar-track {
@@ -158,6 +161,36 @@ main .container {
     margin-right: 0;
     padding-right: 0;
 }
+
+.artigos-linha-do-tempo {   
+    position: relative;
+}
+
+.artigos-linha-do-tempo::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    background-color: #b42310;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.artigo-container {
+    position: relative;
+    width: 49%;
+}
+
+.artigo-container.left {
+    left: 0;
+    margin-right: 20px;
+}
+
+.artigo-container.right {
+    left: 50%;
+    margin-left: 20px;
+}
+
 
 /* seletor: pode ser uma tag html, uma classe (.), um id (#), um atributo [] */
 
