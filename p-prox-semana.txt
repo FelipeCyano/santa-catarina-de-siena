@@ -1,3 +1,0 @@
-Estilização do card (modelo que me enviou);
-Fazer uma espécie de seta que aponta para a bolinha;
-Fazer a bolinha;
