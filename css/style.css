@@ -4,8 +4,7 @@ body {
 }
 
 .header {
-    background-color: rgb(31, 30, 30);
-    
+    background-color: rgb(31, 30, 30); 
 }
 
 .header-container {
@@ -112,14 +111,21 @@ footer .container {
     top: 0px;
 }
 
+.divisor {
+    background-color: #b52f25;
+    height: 100px;
+}
+
 .linha-do-tempo {
     background-color: #1f1e1e;
 }
 
 .linha-do-tempo nav {
+    position: sticky;
+    top: -1px;
     background-color: #b42310;
-    padding-top: 110px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    z-index: 2;
 }
 
 .linha-do-tempo ul {
@@ -182,9 +188,13 @@ footer .container {
 }
 
 .artigo-container {
-    padding: 30px 0;
+    padding-top: 100px;
     position: relative;
     width: 37%;
+}
+
+.artigo-container:last-child {
+    padding-bottom: 100px;
 }
 
 .artigo-container::after {
@@ -199,6 +209,10 @@ footer .container {
     bottom: 109px;
 }
 
+.artigo-container:last-child::after {
+    bottom: 210px;
+}
+
 .artigo-container.left {
     left: 15%;
     margin-right: 20px;
@@ -211,7 +225,7 @@ footer .container {
 .artigo-container.left .artigo-content::before {
     content: " ";
     position: absolute;
-    bottom: 83px;
+    bottom: 113px;
     right: -50px;
     width: 0;
     height: 0;
@@ -235,7 +249,7 @@ footer .container {
 .artigo-container.right .artigo-content::before {
     content: " ";
     position: absolute;
-    bottom: 83px;
+    bottom: 113px;
     left: -50px;
     width: 0;
     height: 0;
@@ -291,8 +305,8 @@ footer .container {
 
 .footer-reliquias {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer-reliquias__item:first-child figure {
@@ -300,14 +314,13 @@ footer .container {
 }
 
 .footer-reliquias__item-figure {
-    width: 400px;
-    height: 500px;
+    width: 500px;
     margin: 0 24px;
 }
 
 .footer-reliquias__item-figure img {
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 
 .footer-reliquias__item-figure:last-child img {
@@ -318,7 +331,7 @@ footer .container {
 .footer-reliquias__item-figure figcaption {
     margin-top: 8px;
     color: #4a4a4a;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bold;
     line-height: 1.3;
     text-align: center;
