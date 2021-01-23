@@ -463,6 +463,48 @@ footer .container {
     main .artigos-linha-do-tempo {   
         margin-top: -742px;
     }
+
+    .artigos-linha-do-tempo::after {
+        left: 0;
+        margin-left: 250px;
+    }
+
+    .artigo-container {
+        width: 50%;
+        padding-top: 85px;
+    }
+
+    .artigo-container.right {
+        padding-left: 320px; 
+        left: 0;   
+    }
+
+    .artigo-container.left {
+        padding-left: 320px;
+        left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .artigo-container.left .artigo-content::before {
+        content: " ";
+        position: absolute;
+        bottom: 113px;
+        left: -50px;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 25px solid #FFF;
+        border-left: 25px solid transparent;
+    }
+
+    .artigo-container.right::after,
+    .artigo-container.left::after {
+        left: 225px;
+    }
+    
 }
 
 /* mobile first */
