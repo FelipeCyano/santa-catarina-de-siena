@@ -2,24 +2,33 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Santa Catarina de Siena</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/reset.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </head> 
     <body>
         <header class="header">
             <div class="header-container">
                 <h1 class="header-title"><a href="#">Santa Catarina de Siena</a></h1>
+                <input type="checkbox" id="checkbox">
                 <nav class="header-nav">
                     <ul class="header-nav__menu">
                         <li class="header-nav__menu-item"><a href="#">Vida</a></li>
                         <li class="header-nav__menu-item"><a href="#">Milagres</a></li>
                         <li class="header-nav__menu-item"><a href="#">Orações</a></li>
                     </ul>                                    
-                </nav>          
+                </nav>
+                <label for="checkbox">               
+                    <span class="material-icons header-icon">
+                    menu
+                    </span>
+                </label>
                 <a class="header-link" href="#">Conheça outro santo</a>
             </div>
         </header>
