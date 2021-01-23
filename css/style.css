@@ -446,15 +446,22 @@ footer .container {
         overflow: auto;
         flex-direction: column;
         margin: 0;
-        min-height: 92vh;
+        min-height: 94vh;
         justify-content: space-between;
     }
     .linha-do-tempo nav ul li {
         padding: initial;
+        height: 50px;
+        margin: 10px 0;
     }
     .linha-do-tempo nav ul li a {
-        display: block;
-
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .artigos-linha-do-tempo {   
+        margin-top: -742px;
     }
 }
 
