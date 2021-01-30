@@ -474,6 +474,12 @@ footer .container {
         padding-top: 85px;
     }
 
+    .artigo-content {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
     .artigo-container.right {
         padding-left: 320px; 
         left: 0;   
@@ -487,7 +493,7 @@ footer .container {
         justify-content: flex-end;
     }
 
-    .artigo-container.left .artigo-content::before {
+    .artigo-content::before {
         content: " ";
         position: absolute;
         bottom: 113px;
@@ -505,6 +511,50 @@ footer .container {
         left: 225px;
     }
     
+    .right {
+        left: 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+    }
+
+    .banner-container {
+        padding-top: 72px; 
+    }
+
+    .banner-container .banner {
+        height: 250px;
+        flex-direction: column;
+        background-image: url(../imagens/reza.jpg);
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    .banner-container .banner-block {
+        text-align: center;
+    }
+
+    .banner-container .banner-image {
+        display: none;
+    }
+
+    .linha-do-tempo nav {
+        width: 150px;
+    }
+    .linha-do-tempo nav ul li {
+        width: initial;
+        margin: 10px;
+    }
+
+    .artigos-linha-do-tempo::after {
+        content: none;
+    }
 }
 
 /* mobile first */
