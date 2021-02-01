@@ -162,13 +162,13 @@ footer .container {
     width: 5px;
     display: none;
 }
-   
+
 .linha-do-tempo ul::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
     background-color: #fff;
 }
-   
+
 .linha-do-tempo ul::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
@@ -386,7 +386,7 @@ footer .container {
     }
 
     .artigo-content {
-        width: 400px;
+        width: 30vw;
     }
     .artigo-content-img {
         height: 350px;
@@ -413,27 +413,28 @@ footer .container {
 }
 
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
     .header-title {
         font-size: 1em;
     }
     .banner {
         height: 220px;
     }
-    .banner-title {
-        font-size: 2em;
-    }
+
     .banner-subtitle {
-        font-size: 0.6em;
         font-weight: 300;
         margin: 10px 0;
     }
+    .banner-container .banner {
+        height: 450px;
+        flex-direction: column;
+        background-image: url(../imagens/reza.jpg);
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
     .banner-image {
-        display: inline-block;
-        width: 300px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
+        display: none;
     }
     .divisor {
         height: 32px;
@@ -475,9 +476,7 @@ footer .container {
     }
 
     .artigo-content {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
+        width: 66vw;
     }
 
     .artigo-container.right {
@@ -493,7 +492,7 @@ footer .container {
         justify-content: flex-end;
     }
 
-    .artigo-content::before {
+    .artigos-linha-do-tempo .artigo-container .artigo-content::before {
         content: " ";
         position: absolute;
         bottom: 113px;
@@ -514,6 +513,15 @@ footer .container {
     .right {
         left: 0%;
     }
+
+    .footer-reliquias__item-figure {
+        width: 250px;
+        margin: initial;
+    }
+
+    .footer-reliquias__item-figure img {
+        height: 320px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -529,11 +537,6 @@ footer .container {
 
     .banner-container .banner {
         height: 250px;
-        flex-direction: column;
-        background-image: url(../imagens/reza.jpg);
-        background-position: center;
-        background-size: cover;
-        justify-content: center;
     }
 
     .banner-container .banner-block {
@@ -544,26 +547,120 @@ footer .container {
         display: none;
     }
 
+    .banner .banner-title {
+        font-size: 2.5em;
+    }
+
+    .banner .banner-subtitle {
+        font-size: 0.8em;
+    }
+
+    .linha-do-tempo {
+        position: relative;
+        height: calc(506px * 9);
+    }
+
     .linha-do-tempo nav {
-        width: 150px;
+        width: 33vw;
+        top: 60px;
     }
     .linha-do-tempo nav ul li {
         width: initial;
         margin: 10px;
     }
 
+    main .artigos-linha-do-tempo {
+        position: absolute;
+        top: 0;
+        margin-top: initial;
+    }
+
     .artigos-linha-do-tempo::after {
         content: none;
     }
+
+    .artigos-linha-do-tempo .artigo-container {
+        padding: initial;
+        left: initial;
+        margin: initial;
+        width: initial;
+
+        max-width: 67vw;
+        margin-left: auto;
+    }
+
+    .artigos-linha-do-tempo .artigo-container .artigo-content {
+        width: 100%;
+        padding: initial;
+        margin-bottom: 25px;
+    }
+
+    .artigos-linha-do-tempo .artigo-container .artigo-content-img {
+        height: 230px;
+    }
+
+    .artigos-linha-do-tempo .artigo-container .artigo-content-text h2 {
+        font-size: 1em;
+    }
+
+    .artigos-linha-do-tempo .artigo-container .artigo-content-text p {
+        font-size: 0.75em;
+    }
+
+    .artigo-container::after {
+        content: none;
+    }
+
+    footer .footer-title {
+        margin-left: initial;
+        font-size: 1.6em;
+    }
+
+    footer .footer-reliquias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-reliquias__item {
+        margin-bottom: 20px;
+    }
+
+    footer .footer-reliquias__item-figure {
+        width: 230px;
+    }
+
+    .footer-reliquias__item-figure img {
+        height: 250px;
+    }
+
+    .footer-reliquias__item:first-child figure {
+        margin-left: 0px;
+    }
 }
 
+@media (max-width: 424px) {
+    .linha-do-tempo {
+        height: calc(560px * 9);
+    }
+}
+
+@media (max-width: 353px) {
+    .linha-do-tempo {
+        height: calc(600px * 9);
+    }
+
+    footer .footer-reliquias__item-figure {
+        margin: 0;
+    }
+}
 /* mobile first */
 @media (min-width: 770px) {
     .header-container {
         height: 86px;
+        font-size: 14px;
     }
     .header-title {
-        flex-basis: 30%;
+        flex-basis: 38%;
     }
     .header-nav {
         position: relative !important;
@@ -588,6 +685,7 @@ footer .container {
     }
     .header-link {
         display: block;
-        flex-basis: 21.5%;
+        flex-basis: 33%;
+        text-align: center;
     }
 }
