@@ -1,3 +1,4 @@
-# Site a respeito de Santa Catarina de Siena
+# Santa Catarina de Siena - Vida, Milagres e Orações
 
-Primeiro projeto em HTML e CSS.
+Meu primeiro projeto de site em HTML e CSS puros.
+Encontra-se incompleto e com alguns bugs.
